@@ -1,8 +1,8 @@
 {
   "name": "@game/game-server",
+  "type": "module",
   "private": true,
   "module": "index.ts",
-  "type": "module",
   "devDependencies": {
     "@types/bun": "latest"
   }

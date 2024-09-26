@@ -1,11 +1,18 @@
 {
   "name": "game-example",
-  "module": "index.ts",
   "type": "module",
+  "module": "index.ts",
   "workspaces": [
     "services/*"
   ],
+  "scripts": {
+    "lint": "eslint --cache"
+  },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.7.2",
+    "eslint": "^9.11.1"
   }
 }
