@@ -1,11 +1,9 @@
 {
-  "name": "game-server",
+  "name": "@game/game-server",
+  "private": true,
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
   }
 }

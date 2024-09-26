@@ -2,9 +2,9 @@
   "name": "game-example",
   "module": "index.ts",
   "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
+  "workspaces": [
+    "services/*"
+  ],
   "peerDependencies": {
     "typescript": "^5.0.0"
   }
