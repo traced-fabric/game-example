@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { OrbitControls, Sky } from '@tresjs/cientos';
 import { TresCanvas } from '@tresjs/core';
+import Playground from './components/Playground.vue';
 </script>
 
 <template>
@@ -19,6 +20,10 @@ import { TresCanvas } from '@tresjs/core';
 
     <TresAmbientLight :intensity="1" />
     <TresDirectionalLight :position="[5, 5, 2]" :intensity="1" />
+
+    <Suspense>
+      <Playground />
+    </Suspense>
 
     <TresMesh
       :position="[-2, 2, 0]"
