@@ -12,6 +12,7 @@
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
+    "verbatimModuleSyntax": true,
     "moduleDetection": "force",
     "emitDeclarationOnly": true,
     "jsx": "preserve",
@@ -22,5 +23,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": ["./src/**/*.ts", "./src/**/*.vue"]
 }

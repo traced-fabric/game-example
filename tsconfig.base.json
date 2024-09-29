@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "jsx": "react-jsx",
     // Enable latest features
     "lib": ["ESNext", "DOM"],
     "moduleDetection": "force",
