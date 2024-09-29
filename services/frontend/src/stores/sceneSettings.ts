@@ -1,12 +1,12 @@
 import { defineStore } from 'pinia';
-import { reactive } from 'vue';
+import { ref } from 'vue';
 
 export const useSceneSettingsStore = defineStore('sceneSettings', () => {
-  const room = reactive({
-    color: '#ffffff',
-  });
+  const roomColor = ref('#ffffff');
 
   return {
-    room,
+    room: {
+      roomColor,
+    },
   };
 });
