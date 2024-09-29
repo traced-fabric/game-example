@@ -2,8 +2,9 @@
 import { Sky } from '@tresjs/cientos';
 import { TresCanvas } from '@tresjs/core';
 import Camera from './components/Camera.vue';
+import Controls from './components/controls/Controls.vue';
+import AllObjects from './components/objects/AllObjects.vue';
 import Playground from './components/Playground.vue';
-import SceneSettings from './components/SceneSettings.vue';
 </script>
 
 <template>
@@ -26,7 +27,9 @@ import SceneSettings from './components/SceneSettings.vue';
     <Suspense>
       <Playground />
     </Suspense>
+
+    <AllObjects />
   </TresCanvas>
 
-  <SceneSettings />
+  <Controls />
 </template>
