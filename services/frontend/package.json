@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "@tresjs/core": "^4.2.10",
+    "@vueuse/core": "^11.1.0",
+    "pinia": "^2.2.2",
     "three": "^0.169.0",
     "vue": "^3.4.37"
   },
