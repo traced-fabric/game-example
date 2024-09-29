@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 body {
-  @apply bg-neutral-800 text-neutral-100;
+  @apply bg-neutral-800 text-neutral-100 select-none;
+}
+
+hr {
+  @apply border-sky-300 border rounded;
 }
 
 input[type="color"] {
