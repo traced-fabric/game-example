@@ -22,7 +22,7 @@ onMounted(advance);
   <TransformControls
     :mode="sceneSettings.transformControls.mode"
     :object="primitiveRef"
-    :size="0.6"
+    :size="0.5"
     @change="advance"
   />
   <primitive
