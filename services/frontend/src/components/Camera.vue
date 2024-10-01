@@ -10,10 +10,11 @@ function render() {
 </script>
 
 <template>
-  <TresPerspectiveCamera :position="[30, 20, 10]" />
+  <TresPerspectiveCamera :position="[30, 20, 10]" :look-at="[0, 8, 0]" />
   <OrbitControls
     :max-distance="100"
     :target="[0, 8, 0]"
+    make-default
     @change="render"
   />
 </template>

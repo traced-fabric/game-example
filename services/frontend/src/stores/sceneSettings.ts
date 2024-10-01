@@ -13,7 +13,7 @@ export type TObject = {
 };
 
 export const useSceneSettingsStore = defineStore('sceneSettings', () => {
-  const roomColor = ref('#ffffff');
+  const roomColor = ref('#fffaf5');
 
   const objects = ref<Record<TObject['id'], TObject>>({});
   const addObject = (object: Omit<TObject, 'id'>) => {
@@ -24,6 +24,8 @@ export const useSceneSettingsStore = defineStore('sceneSettings', () => {
     delete objects.value[id];
   };
 
+  const transformControlsMode = ref<'translate' | 'rotate' | 'scale'>('translate');
+
   return {
     room: {
       color: roomColor,
@@ -33,6 +35,10 @@ export const useSceneSettingsStore = defineStore('sceneSettings', () => {
       list: objects,
       add: addObject,
       remove: removeObject,
+    },
+
+    transformControls: {
+      mode: transformControlsMode,
     },
   };
 });
